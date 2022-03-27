@@ -50,4 +50,23 @@ if ($cantidadadescontar<9750780) {
 if ($cantidadadescontar>=9750780) {
     $Honorarios=$honorariosbrutosanuales-9750780;
 }
+$total=$sueldoimponibleanual+$Honorarios;
+
+$impuestoglobalcomplementario=impuestounicoyglobal($total);
+$x=$impuestoglobalcomplementario-$impuestounico;
+$devuelve=$impuestounico+$impuestoretenidoshonorarios;
+if ($x<0) {
+    echo" Se le devuelve al contribuyente: $devuelve  ";
+}
+if ($x>0) {
+    $y=$x-$impuestoretenidoshonorarios;
+    if ($y>0) {
+        echo" Se le devuelve al contribuyente: $y";
+    }
+    if ($y<0) {
+        $ypositivo=$y*-1;
+        echo" Debe pagar esta cantidad de impuestos: $ypositivo";
+    }
+}
+
 ?>
