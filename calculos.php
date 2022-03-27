@@ -37,4 +37,9 @@ function impuestounicoyglobal($x)
     };
     
 }
+$impuestounico=impuestounicoyglobal($sueldoimponibleanual);
+echo "  $impuestounico  ";
+
+$impuestoretenidoshonorarios=$honorariosbrutosanuales*0.1225;
+echo "  $impuestoretenidoshonorarios  ";
 ?>
