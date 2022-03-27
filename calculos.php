@@ -42,4 +42,12 @@ echo "  $impuestounico  ";
 
 $impuestoretenidoshonorarios=$honorariosbrutosanuales*0.1225;
 echo "  $impuestoretenidoshonorarios  ";
+
+$cantidadadescontar=$honorariosbrutosanuales*0.3;
+if ($cantidadadescontar<9750780) {
+    $Honorarios=$honorariosbrutosanuales-$cantidadadescontar;
+}
+if ($cantidadadescontar>=9750780) {
+    $Honorarios=$honorariosbrutosanuales-9750780;
+}
 ?>
