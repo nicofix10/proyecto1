@@ -25,34 +25,34 @@
       <form action="calculos.php" method="post" target="_blank">
 
 
-    <p><br>Enero: <input type="number" name="sueldoe">
-    <p>Febrero: <input type="number" name="sueldof">
-    <p>Marzo: <input type="number" name="sueldom">
-    <p>Abril: <input type="number" name="sueldoa">
-    <p>Mayo: <input type="number" name="sueldomay">
-    <p>Junio: <input type="number" name="sueldoj">
-    <p>Julio: <input type="number" name="sueldojul">
-    <p>Agosto: <input type="number" name="sueldoag">
-    <p>Septiembre: <input type="number" name="sueldosep">
-    <p>Octubre: <input type="number" name="sueldooc">
-    <p>Noviembre: <input type="number" name="sueldonov">
-    <p>Diciembre: <input type="number" name="sueldod">
+    <p><br>Enero: <input type="number" min="0" name="sueldoe">
+    <p>Febrero: <input type="number"min="0" name="sueldof">
+    <p>Marzo: <input type="number"min="0" name="sueldom">
+    <p>Abril: <input type="number"min="0" name="sueldoa">
+    <p>Mayo: <input type="number"min="0" name="sueldomay">
+    <p>Junio: <input type="number" min="0"name="sueldoj">
+    <p>Julio: <input type="number" min="0"name="sueldojul">
+    <p>Agosto: <input type="number"min="0" name="sueldoag">
+    <p>Septiembre: <input type="number"min="0" name="sueldosep">
+    <p>Octubre: <input type="number"min="0" name="sueldooc">
+    <p>Noviembre: <input type="number"min="0" name="sueldonov">
+    <p>Diciembre: <input type="number"min="0" name="sueldod">
 
 
     <h1><br>Ingrese Boletas de Honorarios por mes:</h1>
 
-    <p><br><br>Enero: <input type="number" name="boletae">
-    <p>Febrero: <input type="number" name="boletaf">
-    <p>Marzo: <input type="number" name="boletam">
-    <p>Abril: <input type="number" name="boletaa">
-    <p>Mayo: <input type="number" name="boletamay">
-    <p>Junio: <input type="number" name="boletaj">
-    <p>Julio: <input type="number" name="boletajul">
-    <p>Agosto: <input type="number" name="boletaag">
-    <p>Septiembre: <input type="number" name="boletasep">
-    <p>Octubre: <input type="number" name="boletaoc">
-    <p>Noviembre: <input type="number" name="boletanov">
-    <p>Diciembre: <input type="number" name="boletad">
+    <p><br><br>Enero: <input type="number"min="0" name="boletae">
+    <p>Febrero: <input type="number"min="0" name="boletaf">
+    <p>Marzo: <input type="number"min="0" name="boletam">
+    <p>Abril: <input type="number"min="0" name="boletaa">
+    <p>Mayo: <input type="number" min="0"name="boletamay">
+    <p>Junio: <input type="number"min="0" name="boletaj">
+    <p>Julio: <input type="number" min="0"name="boletajul">
+    <p>Agosto: <input type="number"min="0" name="boletaag">
+    <p>Septiembre: <input type="number"min="0" name="boletasep">
+    <p>Octubre: <input type="number"min="0" name="boletaoc">
+    <p>Noviembre: <input type="number"min="0" name="boletanov">
+    <p>Diciembre: <input type="number"min="0" name="boletad">
 
     
      <input type="submit" value="Enviar datos"></p>
