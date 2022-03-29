@@ -37,6 +37,7 @@ function impuestounicoyglobal($x)
     };
     
 }
+
 $impuestounico=impuestounicoyglobal($sueldoimponibleanual);
 //echo "  $impuestounico  ";
 
@@ -51,7 +52,10 @@ if ($cantidadadescontar>=9750780) {
     $Honorarios=$honorariosbrutosanuales-9750780;
 }
 $total=$sueldoimponibleanual+$Honorarios;
-
+$k=impuestounicoyglobal($total);
+if($k==0){
+    $f=2;
+}
 $impuestoglobalcomplementario=impuestounicoyglobal($total);
 $x=$impuestoglobalcomplementario-$impuestounico;
 $devuelve=$impuestounico+$impuestoretenidoshonorarios;
@@ -83,19 +87,26 @@ $devuelve=$impuestounico+$impuestoretenidoshonorarios;
       <br><br>
     <h1>Resultado del Tax Help</h1>
     <p class="lead"><?php
-if ($x<=0) {
-    echo" Se le devuelve al contribuyente: $devuelve  ";
+
+if ($f==2) {
+    echo" No paga impuestos y tampoco le toca devolución ya que está excento.";
+}
+else {
+if ($x<0) {
+        echo" Se le devuelve al contribuyente: $devuelve pesos.  ";
+   
 }
 if ($x>0) {
     $y=$x-$impuestoretenidoshonorarios;
     if ($y>0) {
-        echo" Se le devuelve al contribuyente: $y";
+        echo" Se le devuelve al contribuyente: $y pesos.";
     }
     if ($y<0) {
         $ypositivo=$y*-1;
         
-        echo" Debe pagar esta cantidad de impuestos: $ypositivo";
+        echo" Debe pagar esta cantidad de impuestos: $ypositivo pesos.";
     }
+}
 }
 
 ?></p>
