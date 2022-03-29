@@ -55,22 +55,8 @@ $total=$sueldoimponibleanual+$Honorarios;
 $impuestoglobalcomplementario=impuestounicoyglobal($total);
 $x=$impuestoglobalcomplementario-$impuestounico;
 $devuelve=$impuestounico+$impuestoretenidoshonorarios;
-if ($x<=0) {
-    echo" Se le devuelve al contribuyente: $devuelve  ";
-}
-if ($x>0) {
-    $y=$x-$impuestoretenidoshonorarios;
-    if ($y>0) {
-        echo" Se le devuelve al contribuyente: $y";
-    }
-    if ($y<0) {
-        $ypositivo=$y*-1;
-        
-        echo" Debe pagar esta cantidad de impuestos: $ypositivo";
-    }
-}
-
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -88,15 +74,33 @@ if ($x>0) {
         <div>
           <h3 class="float-md-start mb-0" >Tax Help</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link" href="index.php">Volver a calcular impuestos</a>
+            <a class="nav-link" href="index.php">Calcular Impuestos</a>
             <a class="nav-link" href="contact.php">Contacto</a>
           </nav>
         </div>
       </header>
-      </main>
-      
-    </div>
-      <footer class="mt-auto text-white-50">
-        <br><br><br><p>Tax Help</p>
+      <main class="px-3">
+      <br><br>
+    <h1>Resultado del Tax Help</h1>
+    <p class="lead"><?php
+if ($x<=0) {
+    echo" Se le devuelve al contribuyente: $devuelve  ";
+}
+if ($x>0) {
+    $y=$x-$impuestoretenidoshonorarios;
+    if ($y>0) {
+        echo" Se le devuelve al contribuyente: $y";
+    }
+    if ($y<0) {
+        $ypositivo=$y*-1;
+        
+        echo" Debe pagar esta cantidad de impuestos: $ypositivo";
+    }
+}
+
+?></p>
+    </p>
+    <footer class="mt-auto text-white-50">
+      <br><br><br><p>Tax Help</p>
       </footer>
     </div>

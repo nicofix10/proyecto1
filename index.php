@@ -15,7 +15,7 @@
         <div>
           <h3 class="float-md-start mb-0" >Tax Help</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link" href="index.php">Volver a calcular impuestos</a>
+            <a class="nav-link" href="index.php">Calcular Impuestos</a>
             <a class="nav-link" href="contact.php">Contacto</a>
           </nav>
         </div>
