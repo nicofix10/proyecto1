@@ -16,7 +16,7 @@
           <h3 class="float-md-start mb-0" >Tax Help</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a class="nav-link" href="index.php">Volver a calcular impuestos</a>
-            <a class="nav-link" href="contact.php">Contact</a>
+            <a class="nav-link" href="contact.php">Contacto</a>
           </nav>
         </div>
       </header>
@@ -24,7 +24,7 @@
       <div class="row">
       <div class="col-lg-4">
       <br><br><br> 
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="\proyectos\imagenes\paginaweb.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
 
         <h2>Nicolas Guerra</h2>
         <p>Estudiante de informatica y telecomunicaciones de la universidad Diego Portales, encargado de realizar el software del proyecto. <br>
@@ -34,20 +34,22 @@
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <br><br><br>
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="\proyectos\imagenes\calculadora.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
 
         <h2>Tomas Diaz</h2>
         <p>Estudiante de informatica y telecomunicaciones de la universidad Diego Portales, encargado de realizar las presentaciones y los calculos del proyecto. <br>
-           Email:<a href = "mailto:nicolas.guerra_m@mail.udp.cl"> nicolas.guerra_m@mail.udp.cl</a>
+           Email:<a href = "mailto: tomas.diaz_c@mail.udp.cl"> tomas.diaz_c@mail.udp.cl</a>
         </p>
         
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <br><br><br> 
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="\proyectos\imagenes\informe.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
         <h2>Philip Magna</h2>
         <p>Estudiante de informatica y telecomunicaciones de la universidad Diego Portales, encargado de realizar los informes del proyecto. <br>
-           Email:<a href = "mailto:nicolas.guerra_m@mail.udp.cl"> nicolas.guerra_m@mail.udp.cl</a>
+           Email:<a href = "mailto:nicolas.guerra_m@mail.udp.cl"> philip.magna@mail.udp.cl</a>
         </p>
      
       </div><!-- /.col-lg-4 -->
