@@ -38,6 +38,7 @@ function impuestounicoyglobal($x)
     
 }
 
+
 $impuestounico=impuestounicoyglobal($sueldoimponibleanual);
 
 //echo "  $impuestounico  ";
@@ -58,6 +59,7 @@ if ($cantidadadescontar>=9750780) {
 
 $total=$sueldoimponibleanual+$Honorarios;
 $k=impuestounicoyglobal($total);
+$solohonorarios=impuestounicoyglobal($Honorarios);
 if($k==0){
     
     $f=2;
@@ -101,11 +103,25 @@ if ($f==2) {
     echo" No paga impuestos y tampoco le toca devolución ya que está excento.";
 }
 else {
-if ($x<0) {
+
+if($honorariosbrutosanuales==0){
+    echo" Debe pagar esta cantidad de impuestos: $impuestounico pesos.";
+}
+else if($sueldoimponibleanual==0){
+    $v=$impuestoretenidoshonorarios-$solohonorarios;
+    if($v>0){
+        echo" Se le devuelve al contribuyente: $v pesos.  ";   
+    }
+    else{
+        $vpositivo=$v*-1;
+        echo" Debe pagar esta cantidad de impuestos: $vpositivo pesos.";
+    }
+}
+else if ($x<0) {
         echo" Se le devuelve al contribuyente: $devuelve pesos.  ";
    
 }
-if ($x>0) {
+else if ($x>0) {
     $y=$x-$impuestoretenidoshonorarios;
     if ($y>0) {
         echo" Se le devuelve al contribuyente: $y pesos.";
