@@ -20,7 +20,7 @@
           </nav>
         </div>
       </header>
-    <p><h1><br>Ingrese Sueldo por mes:</h1></p>
+    <p><h1><br>Ingrese Sueldo Imponible por mes:</h1></p>
       <main class="px-3">
       <form action="calculos.php" method="post" target="_blank">
 

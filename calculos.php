@@ -39,26 +39,35 @@ function impuestounicoyglobal($x)
 }
 
 $impuestounico=impuestounicoyglobal($sueldoimponibleanual);
+
 //echo "  $impuestounico  ";
 
 $impuestoretenidoshonorarios=$honorariosbrutosanuales*0.1225;
+
 //echo "  $impuestoretenidoshonorarios  ";
 
 $cantidadadescontar=$honorariosbrutosanuales*0.3;
+
 if ($cantidadadescontar<9750780) {
     $Honorarios=$honorariosbrutosanuales-$cantidadadescontar;
 }
 if ($cantidadadescontar>=9750780) {
     $Honorarios=$honorariosbrutosanuales-9750780;
 }
+
+
 $total=$sueldoimponibleanual+$Honorarios;
 $k=impuestounicoyglobal($total);
 if($k==0){
+    
     $f=2;
 }
+
 $impuestoglobalcomplementario=impuestounicoyglobal($total);
 $x=$impuestoglobalcomplementario-$impuestounico;
 $devuelve=$impuestounico+$impuestoretenidoshonorarios;
+
+
 ?>
 
 <!doctype html>

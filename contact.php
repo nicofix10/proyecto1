@@ -49,7 +49,7 @@
 
         <h2>Philip Magna</h2>
         <p>Estudiante de informatica y telecomunicaciones de la universidad Diego Portales, encargado de realizar los informes del proyecto. <br>
-           Email:<a href = "mailto:nicolas.guerra_m@mail.udp.cl"> philip.magna@mail.udp.cl</a>
+           Email:<a href = "mailto:philip.magna_d@mail.udp.cl"> philip.magna_d@mail.udp.cl</a>
         </p>
      
       </div><!-- /.col-lg-4 -->
