@@ -123,13 +123,13 @@ else if ($x<0) {
 }
 else if ($x>0) {
     $y=$x-$impuestoretenidoshonorarios;
-    if ($y>0) {
-        echo" Se le devuelve al contribuyente: $y pesos.";
-    }
     if ($y<0) {
         $ypositivo=$y*-1;
+        echo" Se le devuelve al contribuyente: $ypositivo pesos.";
+    }
+    if ($y>0) {
         
-        echo" Debe pagar esta cantidad de impuestos: $ypositivo pesos.";
+        echo" Debe pagar esta cantidad de impuestos: $y pesos.";
     }
 }
 }
